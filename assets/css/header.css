@@ -1,0 +1,213 @@
+body {
+ 
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.btn_blackToOrange {
+    background-color: #000000;
+}
+.btn_blackToOrange:hover {
+    background-color: orange;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 6px 12px;
+}
+
+.container {
+    min-width: 1382px;
+    margin: 0px 10px;
+}
+
+
+.header-logo {
+    flex: 1;
+    color: white;
+}
+
+.header-nav {
+    flex: 1;
+}
+
+.header-nav__ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header-nav__li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.header-nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav__link:hover {
+    font-weight: bold;
+
+}
+
+.header-nav__li a:active {
+    font-weight: bold;
+}
+
+.header-btns {
+    display: flex;
+    align-items: center;
+}
+
+.header-btns__search {
+    margin-right: 30px;
+}
+
+.header-btns__search input[type="text"] {
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.header-btns__search button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header-btns__search i:hover {
+    color: black;
+    background-color: white;
+}
+
+.header-btns__search i {
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.header-btns__profile,
+.header-btns__korzina {
+    margin-right: 30px;
+    color: white;
+}
+
+.fas{
+    color:white;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: #fff;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header-nav__li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu ul {
+    padding-bottom: 10px;
+}
+
+.sub-menu ul li {
+    padding-top: 6px;
+}
+
+.header-nav__li {
+    position: relative;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: none;
+}
+
+.sub-menu li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-nav__li.active {
+    font-weight: bold;
+}
+
+
+/* Стили для экранов шириной до 768 пикселей */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo {
+        margin-bottom: 20px;
+    }
+
+    .header-nav {
+        margin-bottom: 20px;
+    }
+
+    .header-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-btns__search {
+        margin-bottom: 20px;
+    }
+}
+
+/* Стили для экранов шириной от 769 до 1024 пикселей */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .header-nav__ul {
+        flex-direction: column;
+    }
+
+    .header-nav__li {
+        margin-bottom: 10px;
+    }
+
+    .header-btns {
+        flex-direction: row;
+    }
+}
+
+/* Стили для экранов шириной от 1025 пикселей и больше */
+@media screen and (min-width: 1025px) {
+   
+}

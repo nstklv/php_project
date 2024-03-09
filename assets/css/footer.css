@@ -1,0 +1,49 @@
+.footer {
+    background-color: #000000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 50px 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание по центру */
+    border-radius: 10px;
+}
+
+    
+
+.footer__logo img {
+    width: 100px; /* Ширина логотипа */
+}
+
+.footer__menu,
+.footer__about-us,
+.footer__contacts {
+    width: 25%; /* Ширина блоков */
+    display: inline-block; /* Размещение в одну строку */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+
+.footer__menu ul,
+.footer__about-us p,
+.footer__contacts ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.footer__menu h3,
+.footer__about-us h3,
+.footer__contacts h3 {
+    margin-top: 0; /* Убираем верхний отступ у заголовков */
+}
+
+.footer__menu ul li,
+.footer__contacts ul li {
+    margin-bottom: 10px; /* Отступ между пунктами меню и контактами */
+}
+
+.footer__menu a {
+    color: #fff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    
+}
+
+.footer__menu a:hover {
+    text-decoration: underline; /* Подчеркиваем ссылки при наведении */
+}

@@ -1,0 +1,160 @@
+  .catalog-page {
+    display: flex;
+  }
+
+  .filter-block {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+
+  .filter-block h2 {
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .product-list {
+    flex: 5;
+    padding-left: 20px;
+  }
+
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-link:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .sort-buttons {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .sort-button {
+    margin-left: 12px;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+
+
+  .sort-button:hover {
+    background-color: orange;
+  }
+
+  .sort-button.active {
+    background-color: orange;
+    color: white;
+    /* Цвет текста на активной кнопке */
+  }
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 4 столбца равной ширины */
+    gap: 20px;
+  }
+
+  .product-card {
+    padding: 10px;
+    width: 100%;
+    margin-right: 20px;
+    box-sizing: border-box;
+    color: black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .product-card:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .product-card__image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .product-card__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fa-heart {
+    z-index: 999;
+    font-size: 20px;
+    position: absolute;
+    /* Абсолютное позиционирование */
+    top: 12px;
+    /* Отступ сверху */
+    right: 12px;
+    /* Отступ справа */
+    z-index: 1;
+    /* Чтобы значок оказался поверх изображения */
+    color: rgb(176, 176, 176);
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+
+  .fa-heart:hover {
+    color: #000000;
+  }
+
+
+  .add-to-favorite:active {
+    transform: scale(0.8);
+    /* Уменьшает размер иконки при клике */
+  }
+
+  .fa-heart.liked {
+    color: orange;
+  }
+
+  .add-to-favorite.liked {
+    color: orange; /* Цвет заливки для иконки сердца */
+}
+  .product-card__info {
+    padding: 10px 0;
+
+  }
+
+  .product-card__title {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .product-card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #9b9b9b;
+    margin: 5px 0;
+  }
+
+  .add-to-cart {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .add-to-cart:hover {
+    background-color: #ffffff;
+    color: black;
+  }
